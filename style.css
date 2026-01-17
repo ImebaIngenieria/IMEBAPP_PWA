@@ -1,0 +1,90 @@
+:root{
+  --blue:#0B2A45;
+  --orange:#FF7A00;
+  --border: rgba(11,42,69,.12);
+  --shadow: 0 10px 24px rgba(11,42,69,.10);
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#fff;
+  color:var(--blue);
+}
+
+.topbar{
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-bottom:1px solid var(--border);
+  background:#fff;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.brandIcon{
+  width:28px;
+  height:28px;
+  border-radius:6px;
+}
+.brandText{
+  font-weight:900;
+  letter-spacing:.6px;
+}
+
+.wrap{ padding:16px; }
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:12px;
+}
+
+.card{
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#fff;
+  padding:16px 10px;
+  text-align:center;
+  color:var(--blue);
+  font-weight:900;
+  cursor:pointer;
+  box-shadow: 0 6px 18px rgba(11,42,69,.08);
+}
+
+.card:active{
+  box-shadow: 0 0 0 6px rgba(255,122,0,.14);
+  transform: translateY(1px);
+}
+
+.emoji{ font-size:36px; margin-bottom:10px; }
+.title{ font-size:15px; }
+
+.hint{
+  margin:14px 2px 0;
+  font-size:13px;
+  opacity:.75;
+}
+
+.installBox{
+  margin-top:14px;
+  padding:12px 12px;
+  border:1px dashed rgba(255,122,0,.55);
+  border-radius:14px;
+  background: rgba(255,122,0,.06);
+}
+
+.installTitle{
+  font-weight:900;
+  margin-bottom:4px;
+}
+
+.installSteps{
+  font-size:13px;
+  opacity:.85;
+}

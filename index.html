@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IMEBAPP</title>
+
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta name="theme-color" content="#0B2A45" />
+
+  <!-- iOS: modo app + icono -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="IMEBAPP" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="brandIcon" src="./icons/icon-192.png" alt="IMEBAPP" />
+      <div class="brandText">IMEBAPP</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <button class="card" data-action="web" data-url="https://server1.ik-cloud.es/cerberik_imeba/fichaje_sin/">
+        <div class="emoji">👆</div>
+        <div class="title">FICHAJE</div>
+      </button>
+
+      <button class="card" data-action="native" data-scheme="tramitapp://" data-store="https://apps.apple.com/es/app/tramitapp-empleado/id1171144340">
+        <div class="emoji">🪪</div>
+        <div class="title">RECURSOS HUMANOS</div>
+      </button>
+
+      <button class="card" data-action="store" data-store="https://apps.apple.com/es/app/itcons-app/id1444759098">
+        <div class="emoji">📝</div>
+        <div class="title">PARTE DE TRABAJO</div>
+      </button>
+
+      <button class="card" data-action="web" data-url="https://docs.google.com/forms/d/e/1FAIpQLSfOfqB-qACxCiKVblTKxANhpOgS19OaSrPsZ3aNN7-5oL5aAA/viewform">
+        <div class="emoji">📦</div>
+        <div class="title">SOLICITUD MATERIAL</div>
+      </button>
+
+      <button class="card" data-action="web" data-url="https://script.google.com/macros/s/AKfycbzzfPoixyBDFiC8or9B3OYIJHqSzKDYXd5OlR-R_eMh-yde8xwXM7VuQycx3OsOHMuu/exec">
+        <div class="emoji">🔎</div>
+        <div class="title">CONSULTA MATERIAL</div>
+      </button>
+    </div>
+
+    <p class="hint" id="hint"></p>
+
+    <div class="installBox" id="installBox">
+      <div class="installTitle">Instalar en iPhone</div>
+      <div class="installSteps">
+        Abre esta web en <b>Safari</b> → botón <b>Compartir</b> → <b>Añadir a pantalla de inicio</b>.
+      </div>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
